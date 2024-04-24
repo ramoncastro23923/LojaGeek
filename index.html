@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Loja de Roupas Geek</h1>
+            <div class="botao-menu">
+                <button type="button" class="botaodomenu">Menu</button>
+            </div>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Categorias
+                    <ul class="submenu">
+                        <li><a href="#">Moletons</a></li>
+                        <li><a href="#">Camisetas</a></li>
+                        <li><a href="#">Regatas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Bermudas</a></li>
+                        <li><a href="#">Outros</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+        
+        <div class="conteudo">
+            <section class="container">
+                <div id="sobre-a-loja">
+                    <img src="./imgs/camisaAmostra.avif" title="EBAC shoes" alt="Itens em estoque">
+                    <div>
+                        <h2>Sobre a loja</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, fugit nesciunt. Culpa, consequatur animi non, sint excepturi repellat maiores alias id dolores ab dicta, quas commodi eaque nostrum fugiat numquam!
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <section class="container">
+                <div id="produtos">
+                    <h2>Produtos</h2>
+                    <div class="item-produtos">
+                        <article class="tenis">
+                            <div>
+                                <img src="./imgs/camisaAmostra.avif">
+                                
+                            </div>
+                            <h3>Camiseta 1</h3>
+                            <p>Camiseta disponível em vários tamanhos</p>
+    
+                            <button type="button">Adicionar ao carrinho</button>
+                            
+                    </article>
+                    <article class="tenis">
+                        <div>
+                            <img src="./imgs/camisaAmostra.avif" alt="Tênis, marca: Nike, cor: preto com o logo branco">
+                        </div>
+                        <h3>Camiseta 2</h3>
+                        <p>Camiseta disponível em vários tamanhos</p>
+                        <button type="button">Adicionar ao carrinho</button>
+                        
+                        </article>
+                        <article class="tenis">
+                            <div>
+                                <img src="./imgs/camisaAmostra.avif" alt="Tênis, marca Vans, cor: preta com risco branco ao lado">
+    
+                            </div>
+                            <h3>Camiseta 3</h3>
+                            <p>Camiseta disponível em vários tamanhos</p>
+                            <button type="button">Adicionar ao carrinho</button>
+                                
+                    </article>
+                    <article class="tenis">
+                        <div>
+                            <img src="./imgs/camisaAmostra.avif" alt="Tênis, marca Vans, cor: preta com risco branco ao lado">
+    
+                        </div>
+                        <h3>Camiseta 4</h3>
+                        <p>Camiseta disponível em vários tamanhos</p>
+                        <button type="button">Adicionar ao carrinho</button>
+                    
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+     $('.botao-menu button').click(function() {
+        $('.menu').slideToggle();
+    });
+
+     $(window).resize(function() {
+        if ($(window).width() <= 767) {
+            $('.menu').hide();  
+        } else {
+            $('.menu').show();  
+        }
+    });
+    $(window).trigger('resize');
+});
+
+    </script>
+</html>
